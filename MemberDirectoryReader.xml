@@ -1,0 +1,6 @@
+UserId:1|Username:Tom|Password:Password|Role:Admin
+UserId:2|Username:Jerry|Password:Password1|Role:Admin
+UserId:3|Username:Fred|Password:Password2|Role:Member
+UserId:4|Username:Bart|Password:Password3|Role:Member
+UserId:5|Username:John|Password:Password4|Role:Member
+UserId:2|Username:Fred|Password:Password|Role:Member
