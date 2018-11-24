@@ -1,0 +1,135 @@
+h1 {
+	font-size:4rem;
+}
+
+.font-marketsans {
+	font-family: "Market Sans","Helvetica Neue", Helvetica,Arial,Roboto,sans-serif;
+}
+
+#outer_border {
+	border:1rem #C53D2D groove;
+	background-color:#234D1A;
+}
+
+#inner_border {
+	border:0.25rem black solid;
+	margin:0rem 1rem;
+	padding:0.5rem 0.5rem;
+	background-color:#2CA829;
+}
+
+.header_banner {
+	display:block;
+	float:right;
+	clear:none;
+	border:solid #000000 1rem;
+	background-color:#FAFAFA;
+}
+
+.header_items {
+	display:inline;
+	padding:0rem 1rem;
+}
+
+#main_body {
+	display:block;
+	clear:both;
+}
+
+#footer_info {
+	display:block;
+	float:none;
+	clear:both;
+	margin:1.5rem auto;
+	position:relative;
+	text-align:center;
+	text-decoration:underline;
+	font-size:110%;
+}
+
+input.search_bar {
+	display:block;
+	margin:0rem auto;
+}
+
+input#search_bar_field {
+	width:32rem;
+	height:2.5rem;
+	font-size:1.8rem;
+}
+
+input#search_bar_button {
+	-webkit-appearance:square-button;
+	font-size:1.1rem;
+	height:2rem;
+	width:10rem;
+}
+
+#landing_page_text {
+	text-align:center;
+}
+
+#landing_page_logo {
+	display:block;
+	margin:5rem auto 2rem auto;
+	width:45%;
+	height:45%;
+}
+
+#games_returned_by_query {
+	border:#000000 double 0.5rem;
+	text-align:left;
+}
+
+.single_game_result {
+	display:inline-block;
+	padding:0.5rem 0.5rem;
+	border:0.5rem #0F136A double;
+	width:18rem;
+	height:20.5rem;
+	text-align:center;
+}
+
+img.games_list_on_trades {
+	width:18rem;
+	height:18rem;
+}
+
+#landing_page_info {
+	width:40rem;
+	display:block;
+	margin:0rem auto;
+	border:0.5rem black solid;
+}
+
+img#landing_page_search_img {
+	height:5.5rem;
+}
+
+.landing_page_search {
+	width:8rem;
+	display:inline-block;
+	border:0.5rem orange solid;
+}
+
+img#landing_page_trade_img {
+	height:5.5rem;
+}
+
+.landing_page_trade {
+	width:8rem;
+	display:inline-block;
+	border:0.5rem blue solid;
+}
+
+p.landing_page_search {
+	color:inherit;
+}
+
+p.landing_page_trade {
+	color:inherit;
+}
+
+#landing_page_info_text {
+	color:purple;
+}

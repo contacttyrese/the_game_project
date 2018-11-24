@@ -1,0 +1,57 @@
+/* screen at 360px */
+@media only screen and (min-width:22.5rem) {
+	#outer_border {
+		border:0.35rem #C53D2D groove;
+		background-color:#234D1A;
+	}
+	
+	#inner_border {
+		border:0.1rem black solid;
+		margin:0rem 1rem;
+		padding:0.1rem 0.5rem;
+		background-color:#2CA829;
+	}
+	
+	#landing_page_logo {
+		resize:both;
+		display:block;
+		margin:1rem auto 1rem auto;
+		width:40%;
+		height:40%;
+	}
+	
+	h2 {
+		font-size:0.5rem;
+		color:black;
+	}
+	
+	input.search_bar {
+		display:block;
+		margin:0rem auto;
+	}
+
+	input#search_bar_field {
+		width:8rem;
+		height:0.4rem;
+		font-size:0.4rem;
+	}
+	
+	input#search_bar_button {
+		-webkit-appearance:square-button;
+		font-size:0.45rem;
+		height:0.9rem;
+		width:3rem;
+	}
+	
+	#footer_info {
+		display:block;
+		float:none;
+		clear:both;
+		margin:0.5rem auto;
+		position:relative;
+		text-align:center;
+		text-decoration:underline;
+		font-size:30%;
+	}
+	
+}

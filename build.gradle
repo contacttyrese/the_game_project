@@ -23,7 +23,7 @@ apply plugin: 'org.springframework.boot'
 
 eclipse {
     project {
-        name = 'MessAround'
+        name = 'the_game_project'
         comment = 'Project name should be renamed to the_game_project'
     }
 }

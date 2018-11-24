@@ -1,0 +1,70 @@
+/* MBP screen size matches this media query */
+/* screen at 1024px */
+@media only screen and (min-width:64rem) {
+	#outer_border {
+		border:0.35rem #C53D2D groove;
+		background-color:#234D1A;
+	}
+	
+	#inner_border {
+		border:0.1rem black solid;
+		margin:0rem 1rem;
+		padding:0.1rem 0.5rem;
+		background-color:#2CA829;
+		-webkit-transition:background-color 2s;
+		transition:background-color 2s;
+	}
+	
+	#inner_border:hover {
+		background-color:white;
+	}
+	
+	#landing_page_logo {
+		resize:both;
+		display:block;
+		margin:1.5rem auto 1.5rem auto;
+		width:32%;
+		height:32%;
+	}
+	
+	h2 {
+		font-size:0.9rem;
+		color:pink;
+	}
+	
+	input.search_bar {
+		display:block;
+		margin:0rem auto;
+	}
+
+	input#search_bar_field {
+		width:16rem;
+		height:1.8rem;
+		font-size:1.2rem;
+		-webkit-transition: width 1.5s;
+    	transition: width 1.5s;
+	}
+	
+	input#search_bar_field:focus {
+		width:32rem;
+	}
+	
+	input#search_bar_button {
+		-webkit-appearance:square-button;
+		font-size:0.9rem;
+		height:1.3rem;
+		width:6rem;
+	}
+	
+	#footer_info {
+		display:block;
+		float:none;
+		clear:both;
+		margin:1rem auto;
+		position:relative;
+		text-align:center;
+		text-decoration:underline;
+		font-size:80%;
+	}
+	
+}

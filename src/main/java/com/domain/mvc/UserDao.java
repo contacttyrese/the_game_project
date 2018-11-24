@@ -8,8 +8,11 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.Reader;
 import java.io.Writer;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.regex.Matcher;
@@ -18,8 +21,6 @@ import java.util.regex.Pattern;
 import org.apache.commons.lang3.text.WordUtils;
 import org.codehaus.plexus.util.FastMap;
 
-import com.domain.user.Admin;
-import com.domain.user.Member;
 import com.domain.user.User;
 import com.domain.util.UserUtils;
 
@@ -47,7 +48,17 @@ public class UserDao {
 		
 		if (!listOfUsers.contains(user)) {
 			listOfUsers.add(user);
-			BufferedWriter bw = getBufferedWriterObject(filenameForMemberDirectoryWriter);
+//			BufferedWriter bw = getBufferedWriterObject(filenameForMemberDirectoryWriter);
+			BufferedWriter bw = null;
+			try {
+				bw = Files.newBufferedWriter(Paths.get(new URI(filenameForMemberDirectoryWriter)));
+			} catch (IOException exception) {
+				// TODO Auto-generated catch block
+				exception.printStackTrace();
+			} catch (URISyntaxException exception) {
+				// TODO Auto-generated catch block
+				exception.printStackTrace();
+			}
 			try {
 				for (User theUser : listOfUsers) {
 					List<String> userDataAsAList = UserUtils.convertUserObjectIntoUserCredentials(theUser);

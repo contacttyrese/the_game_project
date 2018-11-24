@@ -15,4 +15,4 @@ include 'api'
 include 'services:webservice'
 */
 
-rootProject.name = 'MessAround'
+rootProject.name = 'the_game_project'
